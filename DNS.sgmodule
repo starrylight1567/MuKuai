@@ -246,6 +246,7 @@ tb.cn = server:quic://dns.alidns.com // 淘宝短网址
 url.cn = server:https://doh.pub/dns-query // 腾讯短网址
 
 gtimg.wechatpay.cn = server:https://doh.pub/dns-query    // <<< 自己加的 >>>
+prewxacode.wxqcloud.qq.com.cn = server:https://doh.pub/dns-query    // <<< 自己加的 >>>
 
 # > 百度
 # refer: https://dudns.baidu.com/support/localdns/Address/index.html
