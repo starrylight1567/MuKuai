@@ -384,3 +384,10 @@ so-net.tw = server:ns1.so-net.net.tw // So-net Entertainment Taiwan
 # > US USA
 # Hurricane Electric
 *.he.net = server:https://ordns.he.net/dns-query // HE.net
+
+# --- JD ---
+*.jd.* = server:quic://dns.alidns.com // // <<< 自己加的 >>>
+*.jdpay.* = server:quic://dns.alidns.com // // <<< 自己加的 >>>
+*.jdpay.com* = server:quic://dns.alidns.com // // <<< 自己加的 >>>
+ask.jdpay.com = server:quic://dns.alidns.com // // <<< 自己加的 >>>
+*.jd.com* = server:quic://dns.alidns.com // // <<< 自己加的 >>>
