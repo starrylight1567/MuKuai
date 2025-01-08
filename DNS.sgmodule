@@ -128,10 +128,6 @@ networking.apple = server:https://doh.dns.apple.com/dns-query // Apple
 *.apple.com = server:https://doh.dns.apple.com/dns-query // Apple.com
 *.icloud.com = server:https://doh.dns.apple.com/dns-query // iCloud.com
 
-*.apple.cn = server:https://doh.dns.apple.com/dns-query   // <<< 自己加的 >>>
-xp.apple.com = server:https://doh.dns.apple.com/dns-query   // <<< 自己加的 >>>
-*testflight.apple.com = server:https://doh.dns.apple.com/dns-query    // <<< 自己加的 >>>
-
 # > Alphabet
 # refer: https://developers.google.com/speed/public-dns/docs/doh?hl=zh-cn
 *.google = server:https://dns.google/dns-query // Google
@@ -245,9 +241,6 @@ tb.cn = server:quic://dns.alidns.com // 淘宝短网址
 *.smtcdns.net = server:https://doh.pub/dns-query // 腾讯云 智能云解析DNS
 url.cn = server:https://doh.pub/dns-query // 腾讯短网址
 
-gtimg.wechatpay.cn = server:https://doh.pub/dns-query    // <<< 自己加的 >>>
-prewxacode.wxqcloud.qq.com.cn = server:https://doh.pub/dns-query    // <<< 自己加的 >>>
-
 # > 百度
 # refer: https://dudns.baidu.com/support/localdns/Address/index.html
 *.baidu = server:180.76.76.76 // 百度
@@ -347,8 +340,6 @@ upos-sz-upcdntx.bilivideo.com = server:https://doh.pub/dns-query // BiliBili upo
 # CNNIC SDNS
 # *.gov.cn = server:1.2.4.8 // 中国政府网
 # *.政务 = server:1.2.4.8 // 中国政府网
-*.gov.cn = server:223.5.5.5 // 中国政府网
-*.政务 = server:223.5.5.5 // 中国政府网
 
 # > HK HKG  \\香港香港
 # PCCW Enterprises Limited
@@ -385,9 +376,26 @@ so-net.tw = server:ns1.so-net.net.tw // So-net Entertainment Taiwan
 # Hurricane Electric
 *.he.net = server:https://ordns.he.net/dns-query // HE.net
 
+# // <<< 自己加的 >>>
+# --- 苹果 ---
+*.apple.cn = server:https://doh.dns.apple.com/dns-query   // <<< 自己加的 >>>
+xp.apple.com = server:https://doh.dns.apple.com/dns-query   // <<< 自己加的 >>>
+*testflight.apple.com = server:https://doh.dns.apple.com/dns-query    // <<< 自己加的 >>>
+# --- 腾讯 ---
+gtimg.wechatpay.cn = server:https://doh.pub/dns-query    // <<< 自己加的 >>>
+prewxacode.wxqcloud.qq.com.cn = server:https://doh.pub/dns-query    // <<< 自己加的 >>>
 # --- JD ---
 *.jd.* = server:quic://dns.alidns.com // // <<< 自己加的 >>>
 *.jdpay.* = server:quic://dns.alidns.com // // <<< 自己加的 >>>
 *.jdpay.com* = server:quic://dns.alidns.com // // <<< 自己加的 >>>
 ask.jdpay.com = server:quic://dns.alidns.com // // <<< 自己加的 >>>
 *.jd.com* = server:quic://dns.alidns.com // // <<< 自己加的 >>>
+# --- 华医通 ---
+*.cd120.* = server:quic://dns.alidns.com // // <<< 自己加的 >>>
+*.cd120.com = server:quic://dns.alidns.com // // <<< 自己加的 >>>
+# --- CN ---
+*.gov.cn = server:quic://dns.alidns.com // 中国政府网 <<< 自己加的 >>>
+*.政务 = server:quic://dns.alidns.com // 中国政府网 <<< 自己加的 >>>
+# --- 12306 ---
+*.12306.* = server:quic://dns.alidns.com // // <<< 自己加的 >>>
+*.12306.cn = server:quic://dns.alidns.com // // <<< 自己加的 >>>
