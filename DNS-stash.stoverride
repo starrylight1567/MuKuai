@@ -1,4 +1,4 @@
-name:!name=SYKT修改251211 "🍟 Fries: 🌐 DNS enhanced"
+name: "🍟 Fries: 🌐 DNS enhanced"
 desc: |-
   1.域名按所属DNS进行分流解析
   2.路由器地址使用系统DNS进行解析
@@ -40,7 +40,7 @@ hosts:
   "ordns.he.net": "74.82.42.42" # https://ordns.he.net/dns-query
 
   # > Modify Contents
-  "services.googleapis.cn": "74.125.193.94" # Google API Services China
+  # "services.googleapis.cn": "74.125.193.94" # Google API Services China
   "talk.google.com": "108.177.125.188" # Firebase Cloud Messaging
   "mtalk.google.com": "108.177.125.188" # Firebase Cloud Messaging
   "alt1-mtalk.google.com": "3.3.3.3" # Firebase Cloud Messaging
@@ -51,8 +51,8 @@ hosts:
   "alt6-mtalk.google.com": "3.3.3.3" # Firebase Cloud Messaging
   "alt7-mtalk.google.com": "74.125.200.188" # Firebase Cloud Messaging
   "alt8-mtalk.google.com": "3.3.3.3" # Firebase Cloud Messaging
-  "dl.google.com": "180.163.151.161" # Google CDN
-  "dl.l.google.com": "180.163.151.161" # Google CDN
+  # "dl.google.com": "180.163.151.161" # Google CDN
+  # "dl.l.google.com": "180.163.151.161" # Google CDN
 
 # DNS配置
 dns:
@@ -72,16 +72,11 @@ dns:
     "stun.l.google.com": system # Google STUN
     "stun?.l.google.com": system # Google STUN
 
-    # > 自己添加的
-    "+.aliyun.+": "https://dns.alidns.com/dns-query" # 阿里云
-    "+.taobao.com": "https://dns.alidns.com/dns-query" # 淘宝
-    "+.oray.+": "https://dns.alidns.com/dns-query" # 贝锐蒲公英
-    
     # > Router Admin Panel
     "+.id.ui.direct": system # Ubiquiti Unifi Network App
-    "unifi.ui.com": system # Ubiquiti Unifi Portal
+    # "unifi.ui.com": system # Ubiquiti Unifi Portal
     "unifi.local": system # Ubiquiti Unifi OS
-    "network.unifi.ui.com": system # Ubiquiti Unifi Controller
+    # "network.unifi.ui.com": system # Ubiquiti Unifi Controller
     "amplifi.lan": system # Ubiquiti Amplifi Router
     "router.synology.com": system # Synology Router
     "sila.razer.com": system # Razer Sila Router
@@ -114,46 +109,46 @@ dns:
     # > Apple
     # refer: https://support.apple.com/zh-cn/HT210060
     "networking.apple": "https://doh.dns.apple.com/dns-query" # Apple
-    "+.apple.com": "https://doh.dns.apple.com/dns-query" # Apple.com
+    # "+.apple.com": "https://doh.dns.apple.com/dns-query" # Apple.com
     "+.icloud.com": "https://doh.dns.apple.com/dns-query" # iCloud.com
 
     # > Alphabet
     # refer: https://developers.google.com/speed/public-dns/docs/doh?hl=zh-cn
-    "+.google" = "https://dns.google/dns-query" # Google
-    "+.google.com" = "https://dns.google/dns-query" # Google
-    "+.google.com.??": "https://dns.google/dns-query" # Google
-    "+.goog": "https://dns.google/dns-query" # Google sites
-    "+.gstatic.com": "https://dns.google/dns-query" # Google 静态资源
-    "+.ggpht.com": "https://dns.google/dns-query" # Google Photos
-    "+.googleusercontent.com": "https://dns.google/dns-query" # Google 用户上传数据
-    "+.googleapis.com": "https://dns.google/dns-query" # Google APIs
-    "+.1e100.net": "https://dns.google/dns-query" # Google backbone
-    "+.youtube": "https://dns.google/dns-query" # Youtube sites
-    "+.youtube.com": "https://dns.google/dns-query" # Youtube
-    "+.ytimg.com": "https://dns.google/dns-query" # Youtube 图片
-    "+.googlevideo.com": "https://dns.google/dns-query" # Youtube Video
-    "+.gvt?.com": "https://dns.google/dns-query" # Google Video Thumbnails
-    "+.recaptcha.net": "https://dns.google/dns-query" # reCaptcha
-    "+.gmail.com": "https://dns.google/dns-query" # Gmail
-    "+.googlesource.com": "https://dns.google/dns-query" # Google Source
-    "+.googleadservices.com": "https://dns.google/dns-query" # Google AD Services
-    "+.doubleclick.net": "https://dns.google/dns-query" # DoubleClick
-    "+.adsense.com": "https://dns.google/dns-query" # AdSense
-    "+.adsensecustomsearchads.com": "https://dns.google/dns-query" # AdSense Custom Search Ads
-    "+.adsenseformobileapps.com": "https://dns.google/dns-query" # AdSense for mobile apps
-    "+.gle": "https://dns.google/dns-query" # Google shortened URLs
-    "goo.gl": "https://dns.google/dns-query" # Google URL Shortener
+    # "+.google" = "https://dns.google/dns-query" # Google
+    # "+.google.com" = "https://dns.google/dns-query" # Google
+    # "+.google.com.??": "https://dns.google/dns-query" # Google
+    # "+.goog": "https://dns.google/dns-query" # Google sites
+    # "+.gstatic.com": "https://dns.google/dns-query" # Google 静态资源
+    # "+.ggpht.com": "https://dns.google/dns-query" # Google Photos
+    # "+.googleusercontent.com": "https://dns.google/dns-query" # Google 用户上传数据
+    # "+.googleapis.com": "https://dns.google/dns-query" # Google APIs
+    # "+.1e100.net": "https://dns.google/dns-query" # Google backbone
+    # "+.youtube": "https://dns.google/dns-query" # Youtube sites
+    # "+.youtube.com": "https://dns.google/dns-query" # Youtube
+    # "+.ytimg.com": "https://dns.google/dns-query" # Youtube 图片
+    # "+.googlevideo.com": "https://dns.google/dns-query" # Youtube Video
+    # "+.gvt?.com": "https://dns.google/dns-query" # Google Video Thumbnails
+    # "+.recaptcha.net": "https://dns.google/dns-query" # reCaptcha
+    # "+.gmail.com": "https://dns.google/dns-query" # Gmail
+    # "+.googlesource.com": "https://dns.google/dns-query" # Google Source
+    # "+.googleadservices.com": "https://dns.google/dns-query" # Google AD Services
+    # "+.doubleclick.net": "https://dns.google/dns-query" # DoubleClick
+    # "+.adsense.com": "https://dns.google/dns-query" # AdSense
+    # "+.adsensecustomsearchads.com": "https://dns.google/dns-query" # AdSense Custom Search Ads
+    # "+.adsenseformobileapps.com": "https://dns.google/dns-query" # AdSense for mobile apps
+    # "+.gle": "https://dns.google/dns-query" # Google shortened URLs
+    # "goo.gl": "https://dns.google/dns-query" # Google URL Shortener
 
     # > Cloudflare
     # refer: https://developers.cloudflare.com/1.1.1.1/encryption/dns-over-https/make-api-requests/
-    "+.cloudflare.com": "https://cloudflare-dns.com/dns-query" # Cloudflare
-    "+.cloudflarestream.com": "https://cloudflare-dns.com/dns-query" # Cloudflare Stream
-    "+.cloudflareclient.com": "https://cloudflare-dns.com/dns-query" # Cloudflare Client
-    "+.cloudflareinsights.com": "https://cloudflare-dns.com/dns-query" # Cloudflare Web Analytics
-    "+.every1dns.net": "https://cloudflare-dns.com/dns-query" # Cloudflare
-    "+.cloudflaressl.com": "https://cloudflare-dns.com/dns-query" # Cloudflare SSL Certificate
-    "+.cloudflare-dns.com": "https://cloudflare-dns.com/dns-query" # Cloudflare DNS
-    "+.workers.dev": "https://cloudflare-dns.com/dns-query" # CloudFlare Workers
+    # "+.cloudflare.com": "https://cloudflare-dns.com/dns-query" # Cloudflare
+    # "+.cloudflarestream.com": "https://cloudflare-dns.com/dns-query" # Cloudflare Stream
+    # "+.cloudflareclient.com": "https://cloudflare-dns.com/dns-query" # Cloudflare Client
+    # "+.cloudflareinsights.com": "https://cloudflare-dns.com/dns-query" # Cloudflare Web Analytics
+    # "+.every1dns.net": "https://cloudflare-dns.com/dns-query" # Cloudflare
+    # "+.cloudflaressl.com": "https://cloudflare-dns.com/dns-query" # Cloudflare SSL Certificate
+    # "+.cloudflare-dns.com": "https://cloudflare-dns.com/dns-query" # Cloudflare DNS
+    # "+.workers.dev": "https://cloudflare-dns.com/dns-query" # CloudFlare Workers
 
     # > 阿里巴巴
     # refer: https://www.alidns.com
@@ -326,27 +321,27 @@ dns:
 
     # > 🇨🇳 CHN
     # CNNIC SDNS
-    "+.gov.cn": "1.2.4.8" # 中国政府网
-    "+.政务": "1.2.4.8" # 中国政府网
+    # "+.gov.cn": "1.2.4.8" # 中国政府网
+    # "+.政务": "1.2.4.8" # 中国政府网
 
     # > 🇭🇰 HKG
     # PCCW Enterprises Limited
-    "+.pccw.com": "dns1.pccw.com" # 电讯盈科
-    "+.1010.com.hk": "dns1.pccw.com" # 1O1O
-    "+.hkcsl.com": "dns1.pccw.com" # csl.
-    "+.theclub.com.hk": "dns1.pccw.com" # The CLUB by HKT
-    "+.now.com": "dns2.pccw.com" # now.com
-    "+.nowe.com": "dns2.pccw.com" # Now E
-    "+.now-tv.com": "dns2.pccw.com" # Now TV
-    "+.moov.hk": "dns3.pccw.com" # MOOV
-    "+.viu.com": "dns3.pccw.com" # viu
-    "+.viu.tv": "dns3.pccw.com" # viu tv
+    # "+.pccw.com": "dns1.pccw.com" # 电讯盈科
+    # "+.1010.com.hk": "dns1.pccw.com" # 1O1O
+    # "+.hkcsl.com": "dns1.pccw.com" # csl.
+    # "+.theclub.com.hk": "dns1.pccw.com" # The CLUB by HKT
+    # "+.now.com": "dns2.pccw.com" # now.com
+    # "+.nowe.com": "dns2.pccw.com" # Now E
+    # "+.now-tv.com": "dns2.pccw.com" # Now TV
+    # "+.moov.hk": "dns3.pccw.com" # MOOV
+    # "+.viu.com": "dns3.pccw.com" # viu
+    # "+.viu.tv": "dns3.pccw.com" # viu tv
     # Hong Kong Cable Television Limited
-    "+.hkcable.com.hk": "dns1.hkcable.com.hk" # Hong Kong Cable Television Limited
-    "+.i-cable.com": "dns2.hkcable.com.hk" # i-CABLE
-    "+.cabletv.com.hk": "dns2.hkcable.com.hk" # CABLE TV Service
+    # "+.hkcable.com.hk": "dns1.hkcable.com.hk" # Hong Kong Cable Television Limited
+    # "+.i-cable.com": "dns2.hkcable.com.hk" # i-CABLE
+    # "+.cabletv.com.hk": "dns2.hkcable.com.hk" # CABLE TV Service
     # KDDI Hong Kong Limited
-    "+.hk.kddi.com": "apple.kdd.net.hk" # KDDI Hong Kong
+    # "+.hk.kddi.com": "apple.kdd.net.hk" # KDDI Hong Kong
 
     # > 🇹🇼 TWN
     # 中华电信
@@ -354,8 +349,8 @@ dns:
     "+.hinet.net": "https://dns.hinet.net/dns-query" # 中华电信HiNet
     "+.emome.net": "https://dns.hinet.net/dns-query" # 中华电信emome
     # So-net
-    "so-net.net.tw": "ns1.so-net.net.tw" # So-net Entertainment Taiwan
-    "so-net.tw": "ns1.so-net.net.tw" # So-net Entertainment Taiwan
+    # "so-net.net.tw": "ns1.so-net.net.tw" # So-net Entertainment Taiwan
+    # "so-net.tw": "ns1.so-net.net.tw" # So-net Entertainment Taiwan
     # Taiwan Network Information Center
     "+.tw": "https://dns.twnic.tw/dns-query" # TWNIC DNS
     "+.taipei": "https://dns.twnic.tw/dns-query" # TWNIC DNS
