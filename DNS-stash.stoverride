@@ -40,7 +40,7 @@ hosts:
   "ordns.he.net": "74.82.42.42" # https://ordns.he.net/dns-query
 
   # > Modify Contents
-  # "services.googleapis.cn": "74.125.193.94" # Google API Services China
+  "services.googleapis.cn": "74.125.193.94" # Google API Services China
   "talk.google.com": "108.177.125.188" # Firebase Cloud Messaging
   "mtalk.google.com": "108.177.125.188" # Firebase Cloud Messaging
   "alt1-mtalk.google.com": "3.3.3.3" # Firebase Cloud Messaging
@@ -51,8 +51,8 @@ hosts:
   "alt6-mtalk.google.com": "3.3.3.3" # Firebase Cloud Messaging
   "alt7-mtalk.google.com": "74.125.200.188" # Firebase Cloud Messaging
   "alt8-mtalk.google.com": "3.3.3.3" # Firebase Cloud Messaging
-  # "dl.google.com": "180.163.151.161" # Google CDN
-  # "dl.l.google.com": "180.163.151.161" # Google CDN
+  "dl.google.com": "180.163.151.161" # Google CDN
+  "dl.l.google.com": "180.163.151.161" # Google CDN
 
 # DNS配置
 dns:
@@ -60,7 +60,7 @@ dns:
   # 配置查询域名使用的 DNS 服务器
   nameserver-policy:
     # > 自己添加的
-    #"+.oray.+": "https://dns.alidns.com/dns-query" # 贝锐蒲公英
+    "+.oray.+": "https://dns.alidns.com/dns-query" # 贝锐蒲公英
     
     # > Modify Contents
     "blog.google": "119.29.29.29" # Google Blog
@@ -77,9 +77,9 @@ dns:
 
     # > Router Admin Panel
     "+.id.ui.direct": system # Ubiquiti Unifi Network App
-    # "unifi.ui.com": system # Ubiquiti Unifi Portal
+    #"unifi.ui.com": system # Ubiquiti Unifi Portal
     "unifi.local": system # Ubiquiti Unifi OS
-    # "network.unifi.ui.com": system # Ubiquiti Unifi Controller
+    "network.unifi.ui.com": system # Ubiquiti Unifi Controller
     "amplifi.lan": system # Ubiquiti Amplifi Router
     "router.synology.com": system # Synology Router
     "sila.razer.com": system # Razer Sila Router
@@ -112,7 +112,7 @@ dns:
     # > Apple
     # refer: https://support.apple.com/zh-cn/HT210060
     "networking.apple": "https://doh.dns.apple.com/dns-query" # Apple
-    # "+.apple.com": "https://doh.dns.apple.com/dns-query" # Apple.com
+    "+.apple.com": "https://doh.dns.apple.com/dns-query" # Apple.com
     "+.icloud.com": "https://doh.dns.apple.com/dns-query" # iCloud.com
 
     # > Alphabet
