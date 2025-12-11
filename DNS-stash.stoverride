@@ -1,4 +1,4 @@
-name: "SYKT修改251211🍟 Fries: 🌐 DNS enhanced"
+name: "251211🍟 Fries: 🌐 DNS enhanced"
 desc: |-
   1.域名按所属DNS进行分流解析
   2.路由器地址使用系统DNS进行解析
@@ -59,9 +59,6 @@ dns:
   prefer-h3: true # 开启 DoH 支持 HTTP/3，将并发尝试
   # 配置查询域名使用的 DNS 服务器
   nameserver-policy:
-    # > 自己添加的
-    "+.oray.+": "https://dns.alidns.com/dns-query" # 贝锐蒲公英
-    
     # > Modify Contents
     "blog.google": "119.29.29.29" # Google Blog
     "googletraveladservices.com": "119.29.29.29" # Google Flights
@@ -77,7 +74,7 @@ dns:
 
     # > Router Admin Panel
     "+.id.ui.direct": system # Ubiquiti Unifi Network App
-    #"unifi.ui.com": system # Ubiquiti Unifi Portal
+    "unifi.ui.com": system # Ubiquiti Unifi Portal
     "unifi.local": system # Ubiquiti Unifi OS
     "network.unifi.ui.com": system # Ubiquiti Unifi Controller
     "amplifi.lan": system # Ubiquiti Amplifi Router
