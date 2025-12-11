@@ -60,9 +60,8 @@ dns:
   # 配置查询域名使用的 DNS 服务器
   nameserver-policy:
     # > 自己添加的
-    "+.oray.+": "https://dns.alidns.com/dns-query" # 贝锐蒲公英
     #"+.oray.+": "https://dns.alidns.com/dns-query" # 贝锐蒲公英
-
+    
     # > Modify Contents
     "blog.google": "119.29.29.29" # Google Blog
     "googletraveladservices.com": "119.29.29.29" # Google Flights
